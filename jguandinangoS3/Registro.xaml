@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jguandinangoS3.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="REGISTRARSE" FontSize="24" HorizontalTextAlignment="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="NOMBRE" FontSize="20" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="0"/>
+                <Entry x:Name="txtNombrer" FontSize="15" Placeholder="Nombre" Grid.Row="0" Grid.Column="1"/>
+                <Label Text="USUARIO" HorizontalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+                <Entry x:Name="txtUsuarior" FontSize="15" Placeholder="Usuario" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="CONTRASEÑA" HorizontalTextAlignment="Center" Grid.Row="2" Grid.Column="0"/>
+                <Entry x:Name="txtContraseñar" FontSize="15" Placeholder="Contraseña" Grid.Row="2" Grid.Column="1" IsPassword="True"/>
+                <Label Text="CONFIRMAR CONTRASEÑA" HorizontalTextAlignment="Center" Grid.Row="3" Grid.Column="0"/>
+                <Entry x:Name="txtContraseñaC" FontSize="15" Placeholder="Confirmar Contraseña" Grid.Row="3" Grid.Column="1" IsPassword="True"/>
+                <Button x:Name="btnRegistrar" Text="REGISTRARSE" Clicked="btnRegistrar_Clicked" Grid.Row="5" Grid.Column="0"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
